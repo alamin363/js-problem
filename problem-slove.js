@@ -167,3 +167,38 @@ let result = Math.min(...numbers);
 // console.log(result);
 let minimamNum = miniMum(numbers);
 console.log(minimamNum);
+
+
+function reverse1(name){
+  let text = '';
+ for(let i = name.length-1; i >= 0; i--){
+   let names = name[i];
+   console.log(names);
+   text += names;
+ }
+ return text;
+}
+
+
+
+let name = 'i am a good boy'
+let resul = reverse1(name);
+console.log(resul);
+
+//  reversh  why/
+
+function reverse(arr){
+  let element = arr.split(' ');
+  let arre = [];
+  for(let i = element.length-1; i >= 0; i--){
+    let arres = element[i];
+    arre.push(arres);
+  }
+  // return arre;
+  const myString = arre.join(' ');
+  return myString;
+}
+
+let me1 = 'alalmin is a good boy his not belong'
+let result2 = reverse(me1);
+console.log(result2);
