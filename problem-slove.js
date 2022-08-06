@@ -131,3 +131,39 @@ function timer(hours){
 let time = 1;
 let minite = timer(time);
 // console.log(minite);
+
+//  Hights Number ===============
+
+function heightNumber(number){
+  let number1 = number[0];
+  for(let i = 0; i < number.length; i++){
+    let value = number[i];
+    if(number1 < value){
+      number1 = value;
+    }
+  }
+  return number1;
+}
+
+const heights = [167, 200, 400, 500, 1000, 367];
+let resultes = heightNumber(heights);
+console.log(resultes);
+// minimum number====-------
+
+function miniMum(valus){
+  let result = valus[0];
+  for(let i = 0; i < valus.length; i++){
+    let numbers = valus[i];
+    if(result > numbers){
+      result = numbers;
+    }
+  }
+  return result;
+}
+
+
+const numbers = [167, 200, 50, 400, 500, 1000, 367];
+let result = Math.min(...numbers);
+// console.log(result);
+let minimamNum = miniMum(numbers);
+console.log(minimamNum);
