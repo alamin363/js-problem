@@ -245,9 +245,9 @@ function divisibelBy3(){
 let resule = divisibelBy3();
 console.log(resule);
 
-// let number = [12, 13 ,44, 10];
-// let resul1 = number.sort();
-// console.log(resul1);
+let number = [12, 13 ,44, 10];
+let resul1 = number.sort();
+console.log(resul1);
 
 function avareg(n) {
   let count = 0, sum = 0;
