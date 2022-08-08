@@ -21,7 +21,6 @@ function oddNumber(num){
 }
 
 
-
 let number = [12, 22, 43, 77, 33];
 let oddNumbers = oddNumber(number)
 console.log(oddNumbers);

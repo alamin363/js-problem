@@ -202,3 +202,104 @@ function reverse(arr){
 let me1 = 'alalmin is a good boy his not belong'
 let result2 = reverse(me1);
 console.log(result2);
+
+// splice ....sclice are boro vi kintu mole arr kea change kore😵‍💫
+
+const frinds = [12, 13, 24, 25, 53, 34, 45 ,76];
+let partial = frinds.splice(2, 4, 100, 200, 300);
+//  *200 and *300 Added
+console.log(partial);
+console.log(frinds);
+
+//  REMOVE DUBLICATES ==================================================================================================================================
+// orjinal name.............
+const names = ['Alamin', 'robiul', 'Alamin', 'Nafi', 'robiul'];
+
+function removeDuplicate(names){
+  const unique = [];
+  for(let i = 0; i < names.length; i++){
+    const name = names[i];
+    if(unique.includes(name) === false){
+      unique.push(name);
+    }
+  }
+  return unique;
+}
+
+
+let uniqueNames = removeDuplicate(names);
+console.log(uniqueNames);
+
+//  3 dara bivaggo 
+
+function divisibelBy3(){
+  let count = 0;
+  for(let i = 1; i <= 20; i++){
+    if(i % 3 === 0){
+     count++;
+    }
+  }
+  return count;
+}
+
+let resule = divisibelBy3();
+console.log(resule);
+
+// let number = [12, 13 ,44, 10];
+// let resul1 = number.sort();
+// console.log(resul1);
+
+function avareg(n) {
+  let count = 0, sum = 0;
+  for(let i = 0; i <= n; i++){
+    count++;
+    sum += i;
+  }
+  const avg = sum / count;
+  return avg;
+}
+
+let avareg1 = avareg(30);
+console.log(avareg1);
+
+// 
+
+function electricityBill(unit){
+  let bill;
+  if(unit <= 100){
+    bill = unit * 5;
+  }
+  else if(unit <= 200){
+    const first100 = 100 * 5;
+    const remaining = unit - 100;
+    const remainingCost = remaining * 6;
+    bill = first100 + remainingCost;
+  }
+  else{
+    const first100 = 100 * 5;
+    const secont100 = 100 * 6;
+    const remaining = unit - 200;
+    const remainingBoll = remaining * 7;
+    bill = first100 + secont100 + remainingBoll;
+
+  }
+  return bill;
+}
+
+const totalBill = electricityBill(250);
+console.log(totalBill);
+
+// prime number jei sonka oi sonka and 1 dara vag jai na ;
+
+function isPrime(number) {
+  for(let i = 2; i < number; i++){
+   if(number % i == 0){
+    return false;
+   }
+  }
+  return true;
+}
+
+let prime = isPrime(4);
+console.log(prime);
+
