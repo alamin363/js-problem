@@ -75,8 +75,15 @@ function feetToMeter(feets) {
 
 const meter = feetToMeter(12);
 const me = feetToMeter(5.7);
-console.log(me);
+console.log(me ,'am i handsame');
 
+function centimeterToMeter(centimeter) {
+ let meter  = centimeter / 100;
+ return meter;
+}
+
+let centmeter = centimeterToMeter(1000);
+console.log(centmeter , "Meter 😏");
 // JORE AND BAJORE .......
 
 function adEven(numbers){
@@ -94,7 +101,7 @@ const adeven = adEven(34);
 console.log(adeven);
 
 
-//======================== problem ============================================================
+//======================== problem ========================================================================
 
 function  leapYear(year){
   if(year % 4 === 0){
@@ -300,6 +307,6 @@ function isPrime(number) {
   return true;
 }
 
-let prime = isPrime(4);
+let prime = isPrime(7);
 console.log(prime);
 

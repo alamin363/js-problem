@@ -37,3 +37,13 @@ function totalCost(carth) {
 
 let totalsPrich = totalCost(carth);
 console.log("tootal expesed today", totalsPrich);
+
+
+// uniqu and and ununick number === 
+const number =[1,2,3,4,2,4,5,3,6,8,7,7];
+
+const dublicates = number.filter((value, index, array)=>{
+  // unicke number are jorno === use
+ return array.indexOf(value) !== index;
+});
+console.log("dublikated number :", dublicates);
